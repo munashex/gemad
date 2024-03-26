@@ -55,7 +55,7 @@ const Home = () => {
           {slides.map((image, index) => (
             <img
               key={index}
-              className="animate-shake  h-96   object-cover w-full rounded-br-none md:rounded-br-[4rem]"
+              className="h-96   object-cover w-full rounded-br-none md:rounded-br-[4rem]"
               src={image.image}
               alt={image.name}
             />
