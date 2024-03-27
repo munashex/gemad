@@ -16,7 +16,7 @@ import Overview from '../Overview';
 const Home = () => {
   const slides = [
     { image: scroll3, name: 'scroll3' }, 
-    {image: scroll1, name: 'scroll2'}
+    { image: scroll1, name: 'scroll2' }
   ];
 
   const getToKnowAboutGemad = [
@@ -40,11 +40,11 @@ const Home = () => {
   const settings = {
     dots: false,
     arrows: false,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000
   };
 
@@ -55,22 +55,22 @@ const Home = () => {
           {slides.map((image, index) => (
             <img
               key={index}
-              className="h-96   object-cover w-full rounded-br-none md:rounded-br-[4rem]"
+              className="h-96 object-cover w-full rounded-br-none md:rounded-br-[4rem]"
               src={image.image}
               alt={image.name}
             />
           ))}
         </Slider>
 
-        <div className="absolute top-2 animate-fade-right animate-duration-700 animate-delay-[1000ms]  bg-[#81551c] bg-opacity-70 p-4 rounded-lg m-2 md:m-5 mx-4 md:mx-9 lg:mx-14">
+        <div className="absolute top-2 animate-fade-right animate-duration-700 animate-delay-[1000ms] bg-[#81551c] bg-opacity-70 p-4 rounded-lg m-2 md:m-5 mx-4 md:mx-9 lg:mx-14">
           <div className="space-y-4 md:space-y-6">
-            <h1 className="text-white animate-fade-right animate-duration-[2000ms] animate-delay-[1000ms]  text-2xl md:text-3xl lg:text-4xl font-bold">
-              Exploring Earth's Depths
+            <h1 className="text-white animate-fade-right animate-duration-[2000ms] animate-delay-[1000ms] text-2xl md:text-3xl lg:text-4xl font-bold">
+              Exploring the Earth's crust
             </h1>
             <h2 className="text-white text-lg md:text-xl lg:text-2xl font-semibold animate-fade-left animate-duration-[2000ms] animate-delay-[1000ms]">
               Trust Our Expertise at Gemad!
             </h2>
-            <button className="text-white border animate-fade-down animate-duration-[2000ms] animate-delay-[1000ms]   hover:bg-[#81551c] hover:border-[#81551c] font-semibold text-base md:text-lg px-4 py-2 rounded-md transition duration-300 ease-in-out transform hover:-translate-y-1">
+            <button className="text-white border animate-fade-down animate-duration-[2000ms] animate-delay-[1000ms] hover:bg-[#81551c] hover:border-[#81551c] font-semibold text-base md:text-lg px-4 py-2 rounded-md transition duration-300 ease-in-out transform hover:-translate-y-1">
               ENQUIRE NOW
             </button>
           </div>
@@ -79,12 +79,11 @@ const Home = () => {
         <div className="absolute top-[19rem] m-2 md:m-5 mx-4 md:mx-9 lg:mx-14">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-y-7 gap-x-7">
             {getToKnowAboutGemad.map((item, index) => (
-              <div key={index} className="animate-fade-right animate-delay-[2000ms] animate-duration-[1000ms] bg-[#05174e]  shadow-lg p-5 space-y-4 rounded-lg">
-                <img src={item.image} alt={item.name}  
-                className="animate-shake animate-twice animate-duration-[1000ms] animate-delay-[2000ms]"
-                 />  
+              <div key={index} className="animate-fade-right animate-delay-[2000ms] animate-duration-[1000ms] bg-[#05174e] shadow-lg p-5 space-y-4 rounded-lg">
+                <img src={item.image} alt={item.name} 
+                className="w-24 md:w-32 mx-auto animate-shake animate-twice  animate-duration-[1000ms] animate-delay-[2000ms]" />
 
-                <h1 className="font-bold text-xl text-white animate-fade-right animate-duration-[1000ms] animate-delay-[2000ms]">{item.name}</h1> 
+                <h1 className="font-bold text-center text-xl text-white animate-fade-right animate-duration-[1000ms] animate-delay-[2000ms]">{item.name}</h1> 
                 <h1 className="text-lg text-white">{item.description}</h1> 
                 
                 <h1 className="font-extrabold animate-fade-up animate-duration-[1000ms] animate-delay-[3000ms] text-xl inline-flex items-center gap-x-2 hover:gap-x-4 text-white"> 
@@ -95,7 +94,7 @@ const Home = () => {
             ))}
           </div>
 
-          <Overview/>
+          <Overview/> 
         </div>
       </div>
     </div>
@@ -103,6 +102,11 @@ const Home = () => {
 };
 
 export default Home;
+
+
+
+
+
 
 
 

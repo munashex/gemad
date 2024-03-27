@@ -4,7 +4,8 @@ import Home from '././Pages/Home/Home'
 import About from './Pages/About' 
 import Services from './Pages/Services' 
 import Clients from './Pages/Clients' 
-import Contact from './Pages/Contact'
+import Contact from './Pages/Contact' 
+
 
 const App = () => {
 

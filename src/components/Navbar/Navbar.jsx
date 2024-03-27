@@ -8,7 +8,7 @@ const Navbar = () => {
 const location = useLocation()
 
     return (
-<div className=" p-2 md:p-5 bg-gradient-to-l  from-[#05172e]  to-white">
+<div className="p-2 md:p-5 bg-gradient-to-l  from-[#05172e]  to-white">
 <div className="">  
 <div className="flex items-center justify-between ">
 
