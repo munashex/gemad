@@ -13,6 +13,6 @@ export const whatwedo = [
     }, 
     {
     id: 4, 
-    paragraph: "When you choose GEMAD, you're not just choosing a consulting firm; you're choosing a partner committed to your success. With our expertise, dedication, and unwavering commitment to excellence, we are confident in our ability to deliver results that surpass expectations. Join us on this journey towards a brighter, more efficient future in the geological and mining industry"
+    paragraph: "When you choose GEMAD, you're not just choosing a consulting firm; you're choosing a partner committed to your success. With our expertise, dedication, and unwavering commitment to excellence, we are confident in our ability to deliver results that surpass expectations. Join us on this journey towards a brighter, more efficient future in the geological and mining services"
     }
 ]
