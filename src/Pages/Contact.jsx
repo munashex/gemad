@@ -29,15 +29,15 @@ function Contact() {
     <div className="flex flex-col gap-y-6 col">
      <span className="inline-flex items-center space-x-2">
       <FaLocationDot color="#81551c" size={27} className="animate-bounce"/>
-      <h1 className="md:text-xl  font-bold">Mareu Buildings 5 Samuel Rd, Delmas, 2210</h1>
+      <h1 className="md:text-xl ">Mareu Buildings 5 Samuel Rd, Delmas, 2210</h1>
      </span>
      <span className="inline-flex items-center space-x-2">
       <FaPhoneAlt color="#81551c" size={27} />
-      <a href="tel:+27720270434" className="font-bold hover:text-[#81551c] md:text-xl decoration underline">+2772 027 0434</a>
+      <a href="tel:+27720270434" className=" hover:text-[#81551c] md:text-xl decoration underline">+2772 027 0434</a>
      </span>
      <span className="inline-flex items-center space-x-2">
       <SiMinutemailer color="#81551c" size={27} />
-      <a href="mailto:gijimanim@gemad.co.za" className="md:text-xl font-bold  decoration underline hover:text-[#81551c]">gijimanim@gemad.co.za</a>
+      <a href="mailto:gijimanim@gemad.co.za" className="md:text-xl   decoration underline hover:text-[#81551c]">gijimanim@gemad.co.za</a>
      </span>
     </div>
 
