@@ -1,8 +1,8 @@
 import React from 'react' 
 import aboutUs from '.././assets/aboutUs.jpg'  
 import aboutImage from '.././assets/aboutImage.jpg'
-import { AboutUs } from '../data/aboutData'
-import value1 from '.././assets/value1.jpg'
+import { AboutUs, ValuesData } from '../data/aboutData'
+
 
 function About() {
   return (
@@ -30,14 +30,14 @@ function About() {
         <h1 className="text-lg md:text-xl"> 
          Our company merges and integrates geological
          exploration; mining and drilling hence named   
-         &nbsp;<span className="font-bold">GEMAD.</span>&nbsp;
-  <span className="font-bold">GEMAD</span> is a well-established geological and mining
-  consulting company based in Delmas since 2015,
-  over the years&nbsp;<span className="font-bold">GEMAD</span> has extended its footprints to
-  other parts of Mpumalanga province mostly in the
-  coal industry. All projects are carried out by fully
-  qualified personnel.
-</h1>
+         &nbsp;<span className="font-bold text-[#05174e]">GEMAD.</span>&nbsp;
+        <span className="font-bold text-[#05174e]">GEMAD</span> is a well-established geological and mining
+        consulting company based in Delmas since 2015,
+       over the years&nbsp;<span className="font-bold text-[#05174e]">GEMAD</span> has extended its footprints to
+       other parts of Mpumalanga province mostly in the
+       coal industry. All projects are carried out by fully
+       qualified personnel.
+       </h1>
 
 
           <img 
@@ -104,22 +104,25 @@ function About() {
  {/* end of values sections with Items insides */} 
  
  {/* explaining div about our values */}
- <div className="my-11 md:my-14"> 
+ <div className="my-11 md:my-14 bg-slate-200">
+  <div className="p-4 md:p-6 lg:p-8 grid grid-cols-1 md:grid-cols-2 gap-x-9 items-baseline">
+    <div className="space-y-5 mx-0 md:mx-3 lg:mx-11">
+      <h1 className="text-[#05174e] font-bold text-xl md:text-2xl lg:text-3xl">Our values define our culture, shape our behaviour and drive our success.</h1>
+      <p className="text-[#05174e] text-lg md:text-xl">They shape how we interact with each other, our clients, and the wider community, and determine the kind of confident, flexible, and accountable company we are and will continue to be.</p>
+    </div>
 
- <div className="p-3 md:p-6">
-   <div className="space-y-5">
-    <h1 className="text-black font-bold text-xl md:text-2xl">Our values define our culture, shape our behaviour and drives our success.</h1>
-    <h1 className="text-black text-lg md:text-xl">They shape how we interact with each other, our clients, and the wider community, and determine the kind of confident, flexible and accountable company we are and will continue to be</h1>
-   </div>
-   
-   
-   <div>
-
-   </div> 
-
- </div>
-
- </div> 
+    <div className="mt-11 grid grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-8">
+      {ValuesData.map((item) => (
+        <div key={item.name} className="space-y-2">
+          <img alt={item.name} src={item.image} className="w-20"/>
+          <h2 className="text-[#05174e] font-bold text-xl md:text-2xl">{item.name}</h2>
+          <p className="text-lg text-[#05174e] md:text-xl">{item.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+ {/*end of  explaining div about our values */}
 
      </div>
 

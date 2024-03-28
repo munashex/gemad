@@ -1,3 +1,8 @@
+import performance from '../assets/performance.svg' 
+import safe from '../assets/safe.svg' 
+import sustain from '../assets/sustain.svg' 
+import respect from '../assets/respect.svg' 
+import teamwork from '../assets/teamwork.svg' 
 
 
 
@@ -36,4 +41,32 @@ export const AboutUs = [
     `
     }
   ];
+
+  export const ValuesData = [
+    {
+   name: "Safety", 
+   description: "People and their safety always comes first.",
+   image: safe
+   }, 
+   {
+    name: "Sustainability", 
+    description: "Committed to pursuing growth in a responsible manner.", 
+    image: sustain
+   }, 
+   {
+    name: "Teamwork", 
+    description: "We always work together and support each other.",
+    image: teamwork
+   }, 
+   {
+   name: "Respect", 
+   description: "We value all people and are committed to treating them with dignity and fairness.",
+   image: respect
+  }, 
+   {
+    name: "Performance", 
+    description: "We always deliver high-quality, effective and efficient solutions.",
+    image: performance
+  }
+]
   
