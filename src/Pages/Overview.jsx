@@ -2,9 +2,10 @@ import React from 'react';
 import { whatwedo } from '../data/homeData';
 import gemadOverview from '.././assets/gemadOverview.jpg';
 
+
 function Overview() {
   return (  
-    <div className="my-[3rem] md:my-[5rem]">
+    <div className="my-[3rem] md:my-[5rem] m-2 md:m-5 mx-4 md:mx-9 lg:mx-14">
       <div className="shadow-lg p-3 lg:p-6 border rounded-lg">
       <h1 className="text-xl md:text-2xl lg:text-4xl text-center mx-0 lg:mx-12  font-bold text-[#333] ">
         GEMAD merges geological exploration, mining, and drilling, serving Mpumalanga's coal industry with expert consulting since 2015
@@ -49,6 +50,7 @@ function Overview() {
   
 </div>
 </div>
+
   );
 }
 

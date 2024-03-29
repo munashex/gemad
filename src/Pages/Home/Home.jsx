@@ -4,13 +4,14 @@ import { MdArrowForwardIos } from "react-icons/md";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import scroll from '../../assets/scroll.jpg';
+
 import scroll1 from '../../assets/scroll1.jpg';
 import scroll3 from '../../assets/scroll3.jpg'; 
 import whatwedo from '../../assets/whatwedo.png' 
 import whoweare from '../../assets/whoweare.png' 
 import inquiry from '../../assets/inquiry.png'
 import Overview from '../Overview';
+import Footer from '../../components/Footer/Footer';
 
 
 const Home = () => {
@@ -76,8 +77,8 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="absolute top-[19rem] m-2 md:m-5 mx-4 md:mx-9 lg:mx-14">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-y-7 gap-x-7">
+        <div className="absolute top-[19rem]">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-y-7 gap-x-7 m-2 md:m-5 mx-4 md:mx-9 lg:mx-14">
             {getToKnowAboutGemad.map((item, index) => (
               <div key={index} className="animate-fade-right animate-delay-[2000ms] animate-duration-[1000ms] bg-[#05174e] shadow-lg p-5 space-y-4 rounded-lg">
                 <img src={item.image} alt={item.name} 
@@ -95,6 +96,7 @@ const Home = () => {
           </div>
 
           <Overview/> 
+          <Footer/>
         </div>
       </div>
     </div>
@@ -102,6 +104,17 @@ const Home = () => {
 };
 
 export default Home;
+
+
+
+
+
+
+
+
+
+
+
 
 
 
