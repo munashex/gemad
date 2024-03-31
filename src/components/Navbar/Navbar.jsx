@@ -1,13 +1,13 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { HiBars3 } from 'react-icons/hi2';
 import { IoMdClose } from 'react-icons/io';
 import { useState } from 'react';
 import gemadLogo from '../../assets/gemadLogo.png';
 import { MdOutlineArrowDropDown, MdOutlineArrowDropUp } from "react-icons/md";
 
-
 const Navbar = () => {
     const location = useLocation();
+    const navigate = useNavigate()
     const [isOpen, setIsOpen] = useState(false);
     const [openServices, setOpenServices] = useState(false);
     const [openServicesPhone, setOpenServicesPhone] = useState(false);
@@ -15,6 +15,26 @@ const Navbar = () => {
     const toggleMenu = () => setIsOpen(!isOpen);
     const toggleServices = () => setOpenServices(!openServices);
     const toggleServicesPhone = () => setOpenServicesPhone(!openServicesPhone);
+
+    const navigateMiningAndCloseMiningNavbar = () => {
+     setIsOpen(!isOpen)    
+     navigate('/services/mining')
+    }
+
+    const navigateMiningAndCloseGeologicalNavbar = () => {
+        setIsOpen(!isOpen)    
+        navigate('/services/geological')
+       }
+   
+    const navigateMiningAndCloseMiningPopUp = () => {
+    setOpenServices(!openServices) 
+    navigate('/services/mining')
+    }
+
+    const navigateMiningAndCloseGeologicalPopUp = () => {
+        setOpenServices(!openServices) 
+        navigate('/services/geological') 
+    }
 
     return (
         <div>
@@ -35,13 +55,13 @@ const Navbar = () => {
 
                         {/* Navbar on md and larger screens */}
                         <div className="hidden text-[whitesmoke] font-extrabold md:flex text-2xl gap-x-9 animate-fade-left animate-delay-200 animate-duration-200">
-                            <Link to="/about">About</Link>
-                            <Link to="/contact">Contact</Link>
+                            <Link to="/about" className={location.pathname === '/about' ? 'border-b-2' : ''}>About</Link>
+                            <Link to="/contact" className={location.pathname === '/contact' ? 'border-b-2' : ''}>Contact</Link>
                             <div className="inline-flex items-center gap-x-1">
-                            <button onClick={toggleServices}>Services</button>  
-                            <span>{openServices ? <MdOutlineArrowDropUp size={34}/> : <MdOutlineArrowDropDown size={34}/>}</span>
-                             </div>
-                            <Link to="/clients">Clients</Link>
+                                <button onClick={toggleServices}>Services</button>
+                                <span>{openServices ? <MdOutlineArrowDropUp size={34}/> : <MdOutlineArrowDropDown size={34}/>}</span>
+                            </div>
+                            <Link to="/clients" className={location.pathname === '/clients' ? 'border-b-2' : ''}>Clients</Link>
                         </div>
                     </div>
 
@@ -53,21 +73,21 @@ const Navbar = () => {
                         <Link to="/about" className="animate-fade-down animate-delay-100" onClick={toggleMenu}>About</Link>
                         <Link to="/contact" className="animate-fade-down animate-delay-200" onClick={toggleMenu}>Contact</Link>
                         <Link to="/clients" className="animate-fade-down animate-delay-500" onClick={toggleMenu}>Clients</Link>
-                         
-                         <div className="border px-7 inline-flex items-center gap-x-2  py-1 rounded">
-                        <button  className="animate-fade-down animate-delay-300" onClick={toggleServicesPhone}>
-                        Services
-                        </button>
-                        <span>{openServicesPhone ? <MdOutlineArrowDropUp size={30}/> : <MdOutlineArrowDropDown size={30}/>}</span>
+                        
+                        <div className="border px-7 inline-flex items-center gap-x-2  py-1 rounded">
+                            <button  className="animate-fade-down animate-delay-300" onClick={toggleServicesPhone}>
+                                Services
+                            </button>
+                            <span>{openServicesPhone ? <MdOutlineArrowDropUp size={30}/> : <MdOutlineArrowDropDown size={30}/>}</span>
                         </div>
                         
                         {/* Overlay popup on small screens */}
                         {openServicesPhone && (
                             <div className="flex flex-col gap-y-5 animate-fade-down">
-                                <button className="rounded-lg animate-fade-right animate-delay-300 hover:text-white font-extrabold hover:bg-[#05172e] hover:border-white p-2 text-lg lg:text-xl text-center bg-[#f7f7f7] text-[#81551c]">
+                                <button onClick={navigateMiningAndCloseGeologicalNavbar} className="rounded-lg animate-fade-right animate-delay-300 hover:text-white font-extrabold hover:bg-[#05172e] hover:border-white p-2 text-lg lg:text-xl text-center bg-[#f7f7f7] text-[#81551c]">
                                     Geological consulting services
                                 </button>
-                                <button className="rounded-lg animate-fade-left animate-delay-300 hover:text-white font-extrabold hover:bg-[#05172e] hover:border-white p-2 text-lg lg:text-xl text-center bg-[#f7f7f7] text-[#81551c]">
+                                <button onClick={navigateMiningAndCloseMiningNavbar} className="rounded-lg animate-fade-left animate-delay-300 hover:text-white font-extrabold hover:bg-[#05172e] hover:border-white p-2 text-lg lg:text-xl text-center bg-[#f7f7f7] text-[#81551c]">
                                     Mining consulting services
                                 </button>
                             </div>
@@ -87,10 +107,10 @@ const Navbar = () => {
                             </button>
                         </div>
                         <div className="flex flex-row gap-4 items-center justify-center mt-5">
-                            <button className="rounded-lg border animate-fade-right animate-delay-300 hover:text-white font-extrabold hover:bg-[#05172e] hover:border-white p-2 text-lg lg:text-xl text-center bg-[#f7f7f7] text-[#81551c]">
+                            <button onClick={navigateMiningAndCloseGeologicalPopUp}  className="rounded-lg border animate-fade-right animate-delay-300 hover:text-white font-extrabold hover:bg-[#05172e] hover:border-white p-2 text-lg lg:text-xl text-center bg-[#f7f7f7] text-[#81551c]">
                                 Geological consulting services
                             </button>
-                            <button className="rounded-lg border animate-fade-left animate-delay-300 hover:text-white font-extrabold hover:bg-[#05172e] hover:border-white p-2 text-lg lg:text-xl text-center bg-[#f7f7f7] text-[#81551c]">
+                            <button onClick={navigateMiningAndCloseMiningPopUp} className="rounded-lg border animate-fade-left animate-delay-300 hover:text-white font-extrabold hover:bg-[#05172e] hover:border-white p-2 text-lg lg:text-xl text-center bg-[#f7f7f7] text-[#81551c]">
                                 Mining consulting services
                             </button>
                         </div>
@@ -102,6 +122,7 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 
 
 
