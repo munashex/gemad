@@ -20,10 +20,10 @@ const googleLocation = "https://www.google.com/maps/place/Mareu/@-26.1479517,28.
                     <div className="flex items-center gap-6">
                         <h2 className="text-lg md:text-xl font-bold">Contact us</h2>
                         <div className="flex gap-6">
-                            <a className="hover:text-[#81551c] " href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><FaLinkedin size={25} /></a>
+                            <a className="hover:text-[#81551c]" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><FaLinkedin size={25} /></a>
                             <a className="hover:text-[#81551c]" href={googleLocation}><FaLocationDot size={25} /></a>
-                            <a className="hover:text-[#81551c]" href="tel:+27720270434"><FaPhoneAlt size={25} /></a>
-                            <a className="hover:text-[#81551c]" href="mailto:gijimanim@gemad.co.za"><SiMinutemailer size={25} /></a>
+                            <a className="hover:text-[#81551c]" href="tel:+27727150780"><FaPhoneAlt size={25} /></a>
+                            <a className="hover:text-[#81551c]" href="mailto:info@gemad.co.za"><SiMinutemailer size={25} /></a>
                         </div>
                     </div>
                 </div>

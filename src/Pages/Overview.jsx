@@ -32,13 +32,10 @@ function Overview() {
       
       <div class="grid grid-cols-1 lg:grid-cols-1 gap-4">
     <button class="rounded-lg border hover:text-white font-extrabold  hover:bg-[#05172e] hover:border-white  p-2 text-lg lg:text-xl text-center bg-[#f7f7f7] text-[#81551c]">
-        Exploration and infill/grade control drilling
-    </button>
-    <button class="rounded-lg border hover:text-white font-extrabold  hover:bg-[#05172e] hover:border-white p-2 text-lg lg:text-xl text-center bg-[#f7f7f7] text-[#81551c]">
-        Percussion and underground horizontal drilling
+      Geological consulting services
     </button>
     <button class="rounded-lg border hover:text-white font-extrabold hover:bg-[#05172e] hover:border-white p-2 text-lg lg:text-xl text-center bg-[#f7f7f7] text-[#81551c]">
-        Mining services
+      Mining consulting services
     </button>
     </div>
     </div>

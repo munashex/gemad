@@ -2,7 +2,7 @@ import React from 'react'
 import aboutUs from '.././assets/aboutUs.jpg'  
 import aboutImage from '.././assets/aboutImage.jpg'
 import { AboutUs, ValuesData } from '../data/aboutData'
-
+import Footer from '../components/Footer/Footer'
 
 function About() {
   return (
@@ -123,6 +123,11 @@ function About() {
   </div>
 </div>
  {/*end of  explaining div about our values */}
+
+ {/* footer components */}
+<div className="mt-24">
+  <Footer/>
+</div>
 
      </div>
 

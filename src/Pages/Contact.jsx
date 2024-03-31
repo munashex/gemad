@@ -1,7 +1,8 @@
 import Location from '../components/Location';
 import { FaPhoneAlt } from "react-icons/fa";
 import { SiMinutemailer } from "react-icons/si";
-import { FaLocationDot } from "react-icons/fa6";
+import { FaLocationDot } from "react-icons/fa6"; 
+import Footer from '../components/Footer/Footer'
 
 function Contact() {
  return (
@@ -33,11 +34,11 @@ function Contact() {
      </span>
      <span className="inline-flex items-center space-x-2">
       <FaPhoneAlt color="#81551c" size={27} />
-      <a href="tel:+27720270434" className=" hover:text-[#81551c] md:text-xl decoration underline">+2772 027 0434</a>
+      <a href="tel:+27727150780" className=" hover:text-[#81551c] md:text-xl decoration underline">+2772 715 0780</a>
      </span>
      <span className="inline-flex items-center space-x-2">
       <SiMinutemailer color="#81551c" size={27} />
-      <a href="mailto:gijimanim@gemad.co.za" className="md:text-xl   decoration underline hover:text-[#81551c]">gijimanim@gemad.co.za</a>
+      <a href="mailto:info@gemad.co.za" className="md:text-xl   decoration underline hover:text-[#81551c]">info@gemad.co.za</a>
      </span>
     </div>
 
@@ -64,6 +65,11 @@ function Contact() {
      </form>
     </div>
     {/* End of Contact form */}
+   </div>
+ 
+   {/* footer component */}
+   <div className="mt-24">
+    <Footer/>
    </div>
   </div>
  );

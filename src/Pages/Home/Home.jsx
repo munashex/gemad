@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import { MdArrowForwardIos } from "react-icons/md";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import {useNavigate, Link} from 'react-router-dom'
 
 
 import scroll1 from '../../assets/scroll1.jpg';
@@ -24,17 +25,20 @@ const Home = () => {
     {
       image: whoweare, 
       name: "Who we are", 
-      description: "Premier geological and mining consulting firm in Delmas, Mpumalanga, integrating exploration, mining, and drilling services seamlessly."
+      description: "Premier geological and mining consulting firm in Delmas, Mpumalanga, integrating exploration, mining, and drilling services seamlessly.",
+      link: "/about"
     }, 
     {
       image: whatwedo,
       name: "What we do", 
-      description: "GEMAD provides comprehensive geological and mining consulting services, optimizing operations for efficiency and success."
+      description: "GEMAD provides comprehensive geological and mining consulting services, optimizing operations for efficiency and success.",
+      link: "/services"
     }, 
     {
       image: inquiry, 
       name: "Make an enquiry", 
-      description: "GEMAD welcomes inquiries regarding our geological and mining consulting services, tailored to optimize operations effectively."
+      description: "GEMAD welcomes inquiries regarding our geological and mining consulting services, tailored to optimize operations effectively.",
+      link: "/contact"
     }
   ];
 
@@ -48,6 +52,8 @@ const Home = () => {
     autoplay: false,
     autoplaySpeed: 3000
   };
+
+  const navigate = useNavigate()
 
   return (
     <div>
@@ -71,7 +77,7 @@ const Home = () => {
             <h2 className="text-white text-lg md:text-xl lg:text-2xl font-semibold animate-fade-left animate-duration-[2000ms] animate-delay-[1000ms]">
               Trust Our Expertise at Gemad!
             </h2>
-            <button className="text-white border animate-fade-down animate-duration-[2000ms] animate-delay-[1000ms] hover:bg-[#81551c] hover:border-[#81551c] font-semibold text-base md:text-lg px-4 py-2 rounded-md transition duration-300 ease-in-out transform hover:-translate-y-1">
+            <button onClick={() => navigate('/contact')} to="/contact" className="text-white border animate-fade-down animate-duration-[2000ms] animate-delay-[1000ms] hover:bg-[#81551c] hover:border-[#81551c] font-semibold text-base md:text-lg px-4 py-2 rounded-md transition duration-300 ease-in-out transform hover:-translate-y-1">
               ENQUIRE NOW
             </button>
           </div>
@@ -87,10 +93,10 @@ const Home = () => {
                 <h1 className="font-bold text-center text-xl text-white animate-fade-right animate-duration-[1000ms] animate-delay-[2000ms]">{item.name}</h1> 
                 <h1 className="text-lg text-white">{item.description}</h1> 
                 
-                <h1 className="font-extrabold animate-fade-up animate-duration-[1000ms] animate-delay-[3000ms] text-xl inline-flex items-center gap-x-2 hover:gap-x-4 text-white"> 
+                <Link to={item.link} className="font-extrabold hover:text-[#81551c] animate-fade-up animate-duration-[1000ms] animate-delay-[3000ms] text-xl inline-flex items-center gap-x-2 hover:gap-x-4 text-white"> 
                   See more 
                   <span className="inline-flex text-[#81551c]"><MdArrowForwardIos size={25} /> <MdArrowForwardIos size={25} /></span>
-                </h1>
+                </Link>
               </div>
             ))}
           </div>
