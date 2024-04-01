@@ -151,7 +151,7 @@ function About() {
     Our Clients
   </h1>
   
-  <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
+  <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 ">
     {clients.map((item) => (
       <div key={item.name} className="flex justify-center items-center">
         <img src={item.image} alt={item.name} className="w-full max-w-[150px] md:max-w-[200px] h-auto" />
