@@ -6,8 +6,9 @@ import 'slick-carousel/slick/slick-theme.css';
 import {useNavigate, Link} from 'react-router-dom'
 
 
-import scroll1 from '../../assets/scroll1.jpg';
-import scroll3 from '../../assets/scroll3.jpg'; 
+import scroll2 from '../../assets/scroll2.jpg'
+import scroll1 from '../../assets/scroll1.jpg'
+import scroll3 from '../../assets/scroll3.jpg'
 import whatwedo from '../../assets/whatwedo.png' 
 import whoweare from '../../assets/whoweare.png' 
 import inquiry from '../../assets/inquiry.png'
@@ -17,8 +18,9 @@ import Footer from '../../components/Footer/Footer';
 
 const Home = () => {
   const slides = [
-    { image: scroll3, name: 'scroll3' }, 
-    { image: scroll1, name: 'scroll2' }
+    { image: scroll2, name: 'scroll2' },
+    {image: scroll3, name: "scroll3"},
+    {image: scroll1, name: "scroll1"},
   ];
 
   const getToKnowAboutGemad = [
@@ -49,7 +51,7 @@ const Home = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000
   };
 
@@ -74,10 +76,10 @@ const Home = () => {
             <h1 className="text-white animate-fade-right animate-duration-[2000ms] animate-delay-[1000ms] text-2xl md:text-3xl lg:text-4xl font-bold">
               Exploring the Earth's crust
             </h1>
-            <h2 className="text-white text-lg md:text-xl lg:text-2xl font-semibold animate-fade-left animate-duration-[2000ms] animate-delay-[1000ms]">
+            <h2 className="text-white text-lg md:text-xl lg:text-2xl font-semibold animate-fade-right animate-duration-[2000ms] animate-delay-[1000ms]">
               Trust Our Expertise at Gemad!
             </h2>
-            <button onClick={() => navigate('/contact')} to="/contact" className="text-white border animate-fade-down animate-duration-[2000ms] animate-delay-[1000ms] hover:bg-[#81551c] hover:border-[#81551c] font-semibold text-base md:text-lg px-4 py-2 rounded-md transition duration-300 ease-in-out transform hover:-translate-y-1">
+            <button onClick={() => navigate('/contact')} to="/contact" className="text-white border animate-fade-right animate-duration-[2000ms] animate-delay-[1000ms] hover:bg-[#81551c] hover:border-[#81551c] font-semibold text-base md:text-lg px-4 py-2 rounded-md transition duration-300 ease-in-out transform hover:-translate-y-1">
               ENQUIRE NOW
             </button>
           </div>

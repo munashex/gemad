@@ -14,11 +14,11 @@ const navigate = useNavigate()
           className="h-72 w-full object-cover rounded-br-none md:rounded-br-[4rem]"
           alt="gemadgeological"
         />
-        <h1 className="absolute top-24 text-2xl left-7 text-white font-extra-bold bg-[#81551c] p-4 bg-opacity-70 rounded md:text-3xl lg:text-4xl font-bold">Geological consulting services</h1>
+        <h1 className="absolute animate-fade-right animate-delay-700 top-24 text-2xl left-7 text-white font-extra-bold bg-[#81551c] p-4 bg-opacity-70 rounded md:text-3xl lg:text-4xl font-bold">Geological consulting services</h1>
       </div>
     
         {/* div with grid for services and what we also do */}
-       <div className="grid grid-cols-1 md:grid-cols-2 mx-0 lg:mx-9">
+       <div className="grid grid-cols-1 animate-fade-right animate-delay-1000 md:grid-cols-2 mx-0 lg:mx-9">
         {/* services offered div here */}
       <div className="mt-8  m-4">
         <h2 className="text-xl md:text-2xl  lg:text-3xl font-bold mb-4">Services Offered:</h2>

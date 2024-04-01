@@ -2,9 +2,30 @@ import React from 'react'
 import aboutUs from '.././assets/aboutUs.jpg'  
 import aboutImage from '.././assets/aboutImage.jpg'
 import { AboutUs, ValuesData } from '../data/aboutData'
-import Footer from '../components/Footer/Footer'
+import Footer from '../components/Footer/Footer' 
+
+import client2 from '.././assets/client2.png' 
+import client3 from '.././assets/client3.png' 
+import client4 from '.././assets/client4.png'
+import client from '.././assets/client.png'
 
 function About() {
+
+  const clients = [
+    {
+   image: client, name: "client"
+   },
+   {
+    image: client2, name: "client1"
+  },
+  {
+    image: client3, name: "client2"
+  },
+  {
+    image: client4, name: "client3"
+  },
+]
+
   return (
     <div>
      <div className="relative">
@@ -13,9 +34,9 @@ function About() {
     className="h-72 w-full object-cover rounded-br-none md:rounded-br-[4rem]"
     alt="gemad"
      />
-     <div className="absolute  top-3 p-4 space-y-4 bg-[#81551c] bg-opacity-70 rounded-md  text-white font-bold text-xl mx-4 md:mx-9 lg:mx-14">
-      <h1 className="text-white  text-2xl md:text-3xl lg:text-4xl font-bold">Who we are</h1>
-      <h2 className="text-white text-lg md:text-xl lg:text-2xl font-bold">
+     <div className="absolute  top-3 p-4 space-y-4 animate-delay-700 animate-fade-right bg-[#81551c] bg-opacity-70 rounded-md  text-white font-bold text-xl mx-4 md:mx-9 lg:mx-14">
+      <h1 className="text-white animate-fade-right animate-delay-1000 text-2xl md:text-3xl lg:text-4xl font-bold">Who we are</h1>
+      <h2 className="text-white animate-fade-down animate-delay-1000 text-lg md:text-xl lg:text-2xl font-bold">
       Premier geological and mining consulting firm in Delmas, Mpumalanga, integrating exploration, mining, and drilling services seamlessly.
       </h2>
      </div>
@@ -123,6 +144,24 @@ function About() {
   </div>
 </div>
  {/*end of  explaining div about our values */}
+  
+  {/* clients sections  */}
+  <div className="mx-4 md:mx-9 lg:mx-14">
+  <h1  className="rounded-lg mb-7   max-w-sm mx-auto  font-extrabold  p-2 text-2xl md:text-3xl text-center bg-[#f7f7f7] text-[#81551c]">
+    Our Clients
+  </h1>
+  
+  <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
+    {clients.map((item) => (
+      <div key={item.name} className="flex justify-center items-center">
+        <img src={item.image} alt={item.name} className="w-full max-w-[150px] md:max-w-[200px] h-auto" />
+      </div>
+    ))}
+  </div>
+</div>
+
+
+
 
  {/* footer components */}
 <div className="mt-24">
