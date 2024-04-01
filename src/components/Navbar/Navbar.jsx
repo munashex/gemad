@@ -61,7 +61,6 @@ const Navbar = () => {
                                 <button onClick={toggleServices}>Services</button>
                                 <span>{openServices ? <MdOutlineArrowDropUp size={34}/> : <MdOutlineArrowDropDown size={34}/>}</span>
                             </div>
-                            <Link to="/clients" className={location.pathname === '/clients' ? 'border-b-2' : ''}>Clients</Link>
                         </div>
                     </div>
 
@@ -72,8 +71,6 @@ const Navbar = () => {
                     <div className={`md:hidden ${isOpen ? 'animate-fade-right flex flex-col items-center gap-12 my-12 text-2xl font-extrabold text-white h-screen' : 'hidden'}`}>
                         <Link to="/about" className="animate-fade-down animate-delay-100" onClick={toggleMenu}>About</Link>
                         <Link to="/contact" className="animate-fade-down animate-delay-200" onClick={toggleMenu}>Contact</Link>
-                        <Link to="/clients" className="animate-fade-down animate-delay-500" onClick={toggleMenu}>Clients</Link>
-                        
                         <div className="border px-7 inline-flex items-center gap-x-2  py-1 rounded">
                             <button  className="animate-fade-down animate-delay-300" onClick={toggleServicesPhone}>
                                 Services
