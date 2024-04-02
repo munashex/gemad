@@ -86,13 +86,13 @@ function About() {
        {/* end of values sections with Items insides */}
      <div className="m-2 space-y-6 md:m-5 mx-4 md:mx-9 lg:mx-14">
   <h1 className="text-3xl md:text-4xl font-bold text-[#81551c]">Values</h1> 
-
+  <hr className="border border-[#81551c] my-2"/> 
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
    
 
   <div className="bg-[#05174e]  rounded-lg shadow-md p-6">
     <h2 className="text-lg md:text-xl font-bold mb-2 text-white">GEMAD</h2>
-    <p className="text-lg md:text-xl text-white">thrives by upholding and sticking by the following abbreviation of “DEDAH” values</p>
+    <p className="text-lg md:text-xl text-white">thrives by upholding and sticking by the following abbreviation of “DEDAH” values.</p>
   </div>
 
   <div className="bg-[#05174e] rounded-lg shadow-md p-6">
