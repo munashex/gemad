@@ -28,7 +28,9 @@ const navigate = useNavigate()
           <li>Developing and designing mine projects (conceptual, pre-feasibility and feasibility studies)</li>
           <li>Mine planning and scheduling.</li>
           <li>Production drilling (drilling of blasting holes).</li>
-          <li>Loading and hauling</li>
+          <li>Loading and hauling</li> 
+          <li>Horizontal core drilling</li> 
+          <li>Core drilling (topsoil mining)</li>
         </ul>
       </div>
        

@@ -14,7 +14,7 @@ const googleLocation = "https://www.google.com/maps/place/Mareu/@-26.1479517,28.
                 <div className="flex flex-col md:flex-row justify-between items-center gap-y-9 md:gap-x-12">
                     <div className="w-full md:w-1/3 flex justify-center md:justify-start">
                     <img alt="gemadLogo" src={gemadLogo} 
-                    className="bg-white rounded w-52 lg:w-56" />
+                    className="bg-white rounded w-52 lg:w-56 p-2" />
                     </div>
 
                     <div className="flex items-center gap-6">
