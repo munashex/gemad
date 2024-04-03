@@ -21,7 +21,7 @@ const navigate = useNavigate()
        <div className="grid grid-cols-1 animate-fade-right animate-delay-1000 md:grid-cols-2 mx-0 lg:mx-9">
         {/* services offered div here */}
       <div className="mt-8  m-4">
-        <h2 className="text-xl md:text-2xl  lg:text-3xl font-bold mb-4">Services Offered:</h2>
+        <h2 className="text-xl md:text-2xl  lg:text-3xl font-extrabold mb-4 text-[#05174e]">Services Offered:</h2>
         <ul className="list-disc pl-8 text-lg space-y-2">
           <li>Prospecting and mining right application.</li>
           <li>Prospecting and mining work plan.</li>
@@ -35,7 +35,7 @@ const navigate = useNavigate()
        
         {/* what we also do div */}
        <div className="m-4 mt-9 space-y-7">
-       <h1 className="text-lg font-bold lg:text-2xl">
+       <h1 className="text-lg font-extrabold lg:text-2xl text-[#05174e]">
        If you'd like further details on how we can support your project through our geological consulting services, please don't hesitate to reach out to us
        </h1>
        <button onClick={() => navigate('/contact')} className="my-4 rounded-lg  border  hover:text-white font-extrabold hover:bg-[#05172e] hover:border-white p-2 text-lg lg:text-xl text-center bg-[#f7f7f7] text-[#81551c]">

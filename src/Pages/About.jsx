@@ -50,11 +50,10 @@ function About() {
         <div className="grid grid-cols-1 my-7 md:grid-cols-2 gap-8 items-center">
         <h1 className="text-lg md:text-xl"> 
          Our company merges and integrates geological
-         exploration; mining and drilling hence named   
-         &nbsp;<span className="font-bold text-[#05174e]">GEMAD.</span>&nbsp;
-        <span className="font-bold text-[#05174e]">GEMAD</span> is a well-established geological and mining
+         exploration; mining and drilling hence named GEMAD.
+        GEMAD is a well-established geological and mining
         consulting company based in Delmas since 2015,
-       over the years&nbsp;<span className="font-bold text-[#05174e]">GEMAD</span> has extended its footprints to
+       over the years GEMAD has extended its footprints to
        other parts of Mpumalanga province mostly in the
        coal industry. All projects are carried out by fully
        qualified personnel.

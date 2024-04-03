@@ -33,15 +33,15 @@ function Contact() {
       <Location />
       <div className="m-2 md:m-5 mx-4 md:mx-9 my-9 md:my-12">
         <div className="space-y-6">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold">Contact Us</h1>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#05174e]">Contact Us</h1>
           <div className="space-y-4 md:space-y-6">
-            <p className="text-lg font-bold md:text-xl">
+            <p className="text-lg font-bold md:text-xl text-[#05174e]">
               Engage with us regarding your involvement in geological exploration, mining, and drilling.
             </p>
             <p className="text-lg md:text-xl">
               If you're interested in learning how we can assist with your geological exploration, mining, and drilling endeavors, don't hesitate to reach out. Our flexible contract mining services and hiring solutions are designed to meet the specific requirements of your operation. Get in touch with us today to explore the possibilities.
             </p>
-            <p className="text-lg md:text-xl font-bold">
+            <p className="text-lg md:text-xl font-bold text-[#05174e]">
               Fill out the form or phone us direct to get started.
             </p>
           </div>
@@ -57,7 +57,11 @@ function Contact() {
           </span>
           <span className="inline-flex items-center space-x-2">
             <FaPhoneAlt color="#81551c" size={27} />
-            <a href="tel:+27727150780" className="hover:text-[#81551c] md:text-xl decoration underline">+2772 715 0780</a>
+            <a href="tel:+27727150780" className="hover:text-[#81551c] md:text-xl decoration underline">+27 72 715 0780</a>
+          </span>
+          <span className="inline-flex items-center space-x-2">
+            <FaPhoneAlt color="#81551c" size={27} />
+            <a href="tel:+27720270434" className="hover:text-[#81551c] md:text-xl decoration underline">+27 72 027 0434</a>
           </span>
           <span className="inline-flex items-center space-x-2">
             <SiMinutemailer color="#81551c" size={27} />

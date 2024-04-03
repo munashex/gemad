@@ -27,7 +27,7 @@ function Overview() {
 
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
     <div className="space-y-6 lg:space-y-11">
-      <h2 className="text-lg lg:text-2xl font-bold mb-4 text-center text-[#333]">GEMAD offers tailored geological exploration and mining solutions, ensuring success at every stage of your project</h2>
+      <h2 className="text-lg lg:text-2xl font-bold mb-4 text-center text-[#05174e]">GEMAD offers tailored geological exploration and mining solutions, ensuring success at every stage of your project</h2>
       <p className="text-lg text-center lg:text-xl mb-6 text-[#444]">Our comprehensive suite of services at GEMAD is supported by a seasoned workforce and our extensive inventory of top-tier machinery</p>
       
       <div class="grid grid-cols-1 lg:grid-cols-1 gap-4">
