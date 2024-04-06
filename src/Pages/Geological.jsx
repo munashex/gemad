@@ -1,6 +1,7 @@
 import geological from '../assets/geological.jpg';
 import {useNavigate} from 'react-router-dom'
 import Footer from '../components/Footer/Footer';
+import { Helmet } from 'react-helmet-async';
 
 function Geological() {
 
@@ -8,6 +9,19 @@ const navigate = useNavigate()
 
   return (
     <div>
+       <Helmet>
+        <title>Geological</title>
+        <meta name="description" content="Gemad offers, 
+        Prospecting and mining right application,
+         Prospecting and mining work plan.
+        Providing diamond core drilling for exploration.
+        Planning and execution of geological exploration program.
+        Grade controlling.
+        Geological sampling during geological exploration.
+        Compiling and signing of the competent person report (CPR) for bankable studies" />
+        </Helmet>
+
+        
       <div className="relative">
         <img 
           src={geological}

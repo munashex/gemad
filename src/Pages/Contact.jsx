@@ -6,7 +6,8 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { SiMinutemailer } from "react-icons/si";
 import { FaLocationDot } from "react-icons/fa6"; 
 import Footer from '../components/Footer/Footer';
-import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser'; 
+import { Helmet } from 'react-helmet-async';
 
 function Contact() {
   const form = useRef();
@@ -30,6 +31,10 @@ function Contact() {
 
   return (
     <div>
+       <Helmet>
+        <title>Contact</title>
+        <meta name="description" content="Gemad, If you're interested in learning how we can assist with your geological exploration, mining, and drilling endeavors, don't hesitate to reach out. Our flexible contract mining services and hiring solutions are designed to meet the specific requirements of your operation. Get in touch with us today to explore the possibilitie" />
+        </Helmet>
       <Location />
       <div className="m-2 md:m-5 mx-4 md:mx-9 my-9 md:my-12">
         <div className="space-y-6">

@@ -7,9 +7,11 @@ import Contact from './Pages/Contact';
 import Mining from './Pages/Mining'; 
 import Geological from './Pages/Geological';
 import NotFound from './Pages/NotFound';
+import {  HelmetProvider } from 'react-helmet-async';
 
 const App = () => {
   return (
+    <HelmetProvider>
     <BrowserRouter>
       <div>
         <Navbar />
@@ -23,6 +25,7 @@ const App = () => {
         </Routes>
       </div>
     </BrowserRouter>
+    </HelmetProvider>
   );
 };
 

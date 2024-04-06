@@ -4,7 +4,7 @@ import { MdArrowForwardIos } from "react-icons/md";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import {useNavigate, Link} from 'react-router-dom'
-
+import { Helmet } from 'react-helmet-async';
 
 import scroll2 from '../../assets/scroll2.jpg'
 import scroll1 from '../../assets/scroll1.jpg'
@@ -59,6 +59,10 @@ const Home = () => {
 
   return (
     <div>
+     <Helmet>
+        <title>Gemad</title>
+        <meta name="description" content="GEMAD offers tailored geological exploration and mining solutions, ensuring success at every stage of your project." />
+        </Helmet>
       <div className="relative">
         <Slider {...settings}>
           {slides.map((image, index) => (

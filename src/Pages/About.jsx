@@ -3,6 +3,7 @@ import aboutUs from '.././assets/aboutUs.jpg'
 import aboutImage from '.././assets/aboutImage.jpg'
 import { AboutUs, ValuesData } from '../data/aboutData'
 import Footer from '../components/Footer/Footer' 
+import { Helmet } from 'react-helmet-async'
 
 import client2 from '.././assets/client2.png' 
 import client3 from '.././assets/client3.png' 
@@ -28,6 +29,10 @@ function About() {
 
   return (
     <div>
+      <Helmet>
+        <title>About</title>
+        <meta name="description" content="Our company merges and integrates geological exploration; mining and drilling hence named GEMAD. GEMAD is a well-established geological and mining consulting company based in Delmas since 2015, over the years GEMAD has extended its footprints to other parts of Mpumalanga province mostly in the coal industry. All projects are carried out by fully qualified personnel." />
+        </Helmet>
      <div className="relative">
      <img 
     src={aboutUs}

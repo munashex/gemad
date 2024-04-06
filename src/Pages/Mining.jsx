@@ -1,6 +1,7 @@
 import mining from '../assets/mining.jpg';
 import {useNavigate} from 'react-router-dom'
 import Footer from '../components/Footer/Footer';
+import { Helmet } from 'react-helmet-async';
 
 function Mining() {
 
@@ -8,6 +9,16 @@ const navigate = useNavigate()
 
   return (
     <div>
+        <Helmet>
+        <title>Mining</title>
+        <meta name="description" content="Gemad offers, Developing and designing mine projects (conceptual, pre-feasibility and feasibility studies)
+        Mine planning and scheduling.
+        Production drilling (drilling of blasting holes).
+        Loading and hauling
+        Horizontal core drilling
+        "/>
+        </Helmet>
+
       <div className="relative">
         <img 
           src={mining}
