@@ -16,16 +16,14 @@ export const AboutUs = [
       out by fully qualified personnels. Our staff is
       keen to uphold our DEDAH values to give our
       client the professional service at the
-      cost-effective manner within the fasted
+      cost-effective manner within the fastest
       turnaround time. GEMAD integrates
       geological exploration, mining, and drilling,
       this allows continuity and stability in terms of
-      flow of information/date from the low
+      flow of information from the low
       (geology) stages to the high (mining and
       processing)
-      stages of the mine value chain, in return we
-      thus charge a discounted rate on each
-      service.
+      stages of the mine value chain.
       `
     }, 
     {
