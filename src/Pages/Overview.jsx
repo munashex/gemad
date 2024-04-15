@@ -1,9 +1,12 @@
 import React from 'react';
 import { whatwedo } from '../data/homeData';
 import gemadOverview from '.././assets/gemadOverview.jpg';
+import {useNavigate} from 'react-router-dom'
 
 
 function Overview() {
+ const navigate = useNavigate()
+  
   return (  
     <div className="my-[3rem] md:my-[5rem] m-2 md:m-5 mx-4 md:mx-9 lg:mx-14">
       <div className="shadow-lg p-3 lg:p-6 border rounded-lg">
@@ -31,10 +34,10 @@ function Overview() {
       <p className="text-lg text-center lg:text-xl mb-6 text-[#444]">Our comprehensive suite of services at GEMAD is supported by a seasoned workforce and our extensive inventory of top-tier machinery</p>
       
       <div class="grid grid-cols-1 lg:grid-cols-1 gap-4">
-    <button class="rounded-lg border hover:text-white font-extrabold  hover:bg-[#05172e] hover:border-white  p-2 text-lg lg:text-xl text-center bg-[#f7f7f7] text-[#81551c]">
+    <button onClick={() => navigate('/services/geological')} class="rounded-lg border hover:text-white font-extrabold  hover:bg-[#05172e] hover:border-white  p-2 text-lg lg:text-xl text-center bg-[#f7f7f7] text-[#81551c]">
       Geological consulting services
     </button>
-    <button class="rounded-lg border hover:text-white font-extrabold hover:bg-[#05172e] hover:border-white p-2 text-lg lg:text-xl text-center bg-[#f7f7f7] text-[#81551c]">
+    <button  onClick={() => navigate('/services/mining')} class="rounded-lg border hover:text-white font-extrabold hover:bg-[#05172e] hover:border-white p-2 text-lg lg:text-xl text-center bg-[#f7f7f7] text-[#81551c]">
       Mining consulting services
     </button>
     </div>
